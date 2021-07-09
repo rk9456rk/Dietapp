@@ -1,0 +1,99 @@
+//import 'package:firefluterrk1/model/USer.dart';
+//import 'package:firefluterrk1/services/database.dart';
+//import 'package:firefluterrk1/shared/contants.dart';
+//import 'package:firefluterrk1/shared/loading.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+class Settingform extends StatefulWidget {
+  @override
+  _SettingformState createState() => _SettingformState();
+}
+
+class _SettingformState extends State<Settingform> {
+   final _formkey=GlobalKey<FormState>();
+   final List<String> sugar=['0','1','2','3','4'];
+   String _currentname;
+   String _currentsugar;
+   int  _currentStength;
+
+  @override
+  Widget build(BuildContext context) {
+      //final user=Provider.of<User>(context);
+    return StreamBuilder<UserData>(
+      stream: DatabaseService(uid:user.uid).userData,
+      builder: (context, snapshot) {
+        if(snapshot.hasData)
+        {
+
+        UserData userData= snapshot.data;
+        return Form(
+          key :_formkey,
+          child: Column(
+            children: <Widget>[
+              Text('update the setting',
+              style:  TextStyle(fontSize:  20.0)),
+              SizedBox(height: 20.0),
+               TextFormField(
+                          initialValue: userData.name,
+                          decoration:textInputDecoration.copyWith(hintText: 'name'),
+                          validator:(val)=>val.isEmpty?'Enter the name':null,
+                          onChanged: (val)
+                          {
+                            setState(()=>_currentname=val);
+                          },
+                        ),
+              SizedBox(height: 20.0),
+              // drop down
+              DropdownButtonFormField(
+                decoration: textInputDecoration,
+                value:_currentsugar??userData.sugar,
+                items: sugar.map((sugar){
+                  return DropdownMenuItem(
+                             value: sugar,
+                             child: Text('$sugar Sugarts')
+                  );
+                }).toList(),
+                onChanged: (val)=> setState(()=>_currentsugar=val)
+                ),
+              
+              //slider
+              Slider(
+                value: (_currentStength??userData.strength).toDouble(),
+                min:100.0,
+                max:900.0,
+                divisions: 8,
+                onChanged: (val)=> setState(()=>_currentStength=val.round()),
+                activeColor: Colors.brown,
+                inactiveColor: Colors.brown[_currentStength??100],
+              ),
+              // ignore: deprecated_member_use
+              RaisedButton(
+                color: Colors.green,
+                child: Text('Update',style:TextStyle( color: Colors.white)),
+         
+                onPressed: () async{
+                  if(_formkey.currentState.validate())
+                  { await DatabaseService(uid: user.uid).updateUserData
+                  ( _currentsugar??userData.sugar,
+                    _currentname??userData.name,
+                    _currentStength??userData.strength
+                    );
+                    Navigator.pop(context);
+
+                  }
+                  },
+                )
+            ],
+          ),
+          
+        );
+
+        }
+        else
+        {
+          return Loading();
+        }
+      }
+    );
+  }
+}

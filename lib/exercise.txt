@@ -1,0 +1,38 @@
+List<String> exdisplaylist=['Walking (239 calories/hour)',
+'Walk at a moderate pace (2.8 to 3.2 mph) on a level surface and you’ll rack up at least 3.5 METs. Pick up the pace to a brisk 3.5 mph, however, and you’ll nab 4.3 METs, which works out to 293 calories/hour.\n'
+,
+'Jumping rope (750 calories/hour)'
+At 11.0 METs, jumping rope is comparable to running at a pace of 7 mph (that’s 8.5 minutes per mile). Plus, jumping movements have been shown to promote stronger bones.
+
+Lifting weights (239 calories/hour)
+Build muscle mass and strengthen your bones with some good old-fashioned resistance training and you’ll rack up 3.5 METs. And as you’ve already learned, adding muscle to your frame means you’ll burn more calories on a daily basis.
+
+Exercising on the elliptical (341 calories/hour)
+Hop on the joint-friendly elliptical and pedal away at a moderate effort to get 5.0 METs.
+
+Doing yoga (273 calories/hour)
+There are a variety of yoga styles, and each offers its own level of intensity. Power yoga, one of the more intense versions of this ancient form of meditation, will give you 4.0 METs. Hatha yoga, which is typically slower and gentler, offers only 2.5 METs (171 calories/hour).
+
+Swimming (396 calories/hour)
+Swimming laps at a light or moderate effort will give you a low-impact workout that offers 5.8 METs. Bump up the intensity to a vigorous effort, however, and you’ll nab 9.8 METs (668 calories/hour).
+
+Doing squats (341 calories/hour)
+Squats are a multi-joint exercise that recruits several large muscle groups , including the glutes and quadriceps. Do them and you’ll reap 5.0 METs.
+
+Riding a stationary bike (464 calories/hour)
+Cycling at moderate-to-vigorous effort is not only easier on your joints than other forms of cardio exercise (namely, running), but it’ll net you 6.8 METs.
+
+Doing jumping jacks (546 calories/hour)
+Jumping jacks are considered a vigorous form of calisthenics, which is a category of exercise that involves bodyweight movements. They’re also worth 8.0 METs.
+
+Hiking (409 calories/hour)
+Spending time out in nature will net you roughly 6.0 METs, which will only increase if you add weight (like a backpack) or climb hilly terrain.
+
+Doing sit-ups (259 calories/hour)
+Moderate-effort calisthenics like old-school sit-ups clock in at 3.8 METs.
+
+Climbing stairs (273 calories/hour)
+Whether you’re on a StairMaster or climbing the stairs at work, you’ll score 4.0 METs if you climb at a slow, easy pace. But if you pick it up to a fast pace, you’ll get 8.8 METs (600 calories/hour).
+
+Doing burpees (546 calories/hour)
+At 8.0 METs, burpees are a full-body, high-intensity calisthenic exercise. In fact, a 2014 study found that performing burpees offers cardiovascular benefits similar to doing sprint intervals on a bike.']
