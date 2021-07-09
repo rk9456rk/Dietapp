@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "515925121006",
+    "project_id": "firedietapp",
+    "storage_bucket": "firedietapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515925121006:android:15c24db71f777a2c2fa0ff",
+        "android_client_info": {
+          "package_name": "com.example.dietapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515925121006-2gg4n1i4mnq7plm22ib6ove35jhdsn28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYSCuDFhmrHfrfrl1yARSPfFDUy2ZbdbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515925121006-2gg4n1i4mnq7plm22ib6ove35jhdsn28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
